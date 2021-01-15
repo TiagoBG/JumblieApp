@@ -1,0 +1,143 @@
+.nav-style {
+    background: #F5F5F5;
+    z-index: 1000;
+    width: 300px;
+    min-height: 950px;
+    top: 0;
+    left: 0;
+    list-style: none;
+}
+
+.user-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: black;
+}
+
+.line-section, .line-section-two {
+    width: 250px;
+    background-color: rgb(207, 207, 207);
+    height: 1px;
+}
+
+.line-section-two {
+    bottom: 80px;
+}
+
+.line-section {
+    bottom: 280px;
+}
+
+.nav-user-avatar {
+    bottom: 296px;
+}
+
+.nav-section {
+    color: #2C2C2C;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five {
+   background: none;
+   width: 300px;
+   left: 0;
+   height: 50px;
+
+   &:hover {
+    background: #F9EDCC;
+   }
+}
+
+.section-one {
+    bottom: 240px;
+}
+
+.section-two {
+    bottom: 226px;
+}
+
+.section-three {
+    bottom: 135px;
+}
+
+.section-four {
+    bottom: 111px;
+}
+
+.section-five {
+    top: 150px;
+}
+
+.icon-list-nav {
+    color: #2C2C2C;;
+    font-size: 20px;
+}
+
+.Tooltip-acces-menu {
+    display: none;
+    position: absolute;
+    background: #FDFDFD;
+    z-index: 2;
+    border-radius: 10px;
+    width: 120px;
+    height: 135px;
+    left: 320px;
+    top: -2px;
+    box-shadow: 0px 3px 22px rgba(0, 0, 0, 0.25);
+}
+
+.Tooltip-acces-menu::after {
+    content: "";
+    display: block;
+    border-top: 15px solid #FDFDFD;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    left: -22px;
+    bottom: 98px;
+    transform: rotate(90deg);
+}
+
+.tooltip-img-acces {
+    width: 90px;
+    height: 104px;
+    border-radius: 5px;
+}
+
+.section-one:hover .Tooltip-acces-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two:hover .Tooltip-acces-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three:hover .Tooltip-acces-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four:hover .Tooltip-acces-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-five:hover .Tooltip-acces-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

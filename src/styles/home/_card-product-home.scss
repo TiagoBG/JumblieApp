@@ -1,0 +1,127 @@
+.card-product {
+    width: 250px; 
+    height: 290px; 
+    margin-bottom: 32px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.12));
+    cursor: pointer;
+}
+
+.card-header {
+    background: none;
+    border: none;
+}
+
+.card-header-span {
+    width: 35px;
+    height: 35px;
+    background: #C1C1C1;
+    border-radius: 50%;
+}
+
+.card-company-logo {
+    color: #343232;
+    font-size: 20px;
+}
+
+.card-company-name {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #655F5F;
+}
+
+.card-image {
+    width: 100%;
+    height: 130px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 2;
+}
+
+.card-content-btns {
+    height: 60px;
+    padding: 0 0 0 16px;
+    z-index: 3;
+}
+
+.card-style-icon-like {
+    background: #FDE1E1;
+    height: 40px;
+    width: 40px;
+    margin-left: 190px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.card-btn-add {
+    height: 40px;
+    border: none;
+    width: 125px;
+    border-radius: 5px;
+}
+
+.card-content-footer {
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-title-footer {
+    color: #3E3535;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-title-two-footer{
+    color: #21211E;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-paginate-products {
+    cursor: pointer;
+}
+
+.background-section-access {
+    background: #faeec7;
+    height: 800px;
+    width: 100%;
+}
+
+.global-content-footer-card-product {
+    height: 55px;
+}
+
+.global-section-home {
+    margin-left: 300px;
+}
+
+.section-cards-global {
+    margin-left: 90px;
+}
+
+.btn-reset-filter-products {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #BF1A42;
+    color: #FAFAFA;
+    height: 40px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+}
+
+.content-carrousel-products {
+    margin-left: 90px;
+    margin-right: 90px;
+}
