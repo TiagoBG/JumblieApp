@@ -26,7 +26,7 @@ function HomeInfoMaster() {
   return (
     <>
       <section className="content-section-body-info-home d-flex justify-content-end 
-    position-relative">
+    position-relative container-fluid">
 
         <img src={ShoperMan} alt="" className="mr-5 shoperman-style" />
         <div className="content-global-info-tab">
@@ -95,7 +95,7 @@ function HomeInfoMaster() {
         </div >
       </section >
 
-      <section className="content-testimonials d-flex justify-content-between">
+      <section className="content-testimonials d-flex justify-content-between container-fluid">
         <Testimonials
           ParagraphOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, pretium vulputate dis egestas orci lectus auctor."
           ParagraphTwo="enim justo, sollicitudin odio nec bibendum massa venenatis."

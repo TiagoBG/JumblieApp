@@ -6,6 +6,7 @@ import AgileInnova from '../../images/png/Icon-Agile-Innova.png'
 import IconMakaia from '../../images/png/Icon-makaia.png'
 import useSound from 'use-sound';
 import SubSound from '../../audio/suscribirse.mp4';
+import IconAG from '../../images/png/logoAG.png';
 
 function Footer() {
     const [play5] = useSound(SubSound);
@@ -52,6 +53,10 @@ function Footer() {
                     </a>
                     <a href="https://agileinnova.org/">
                         <img src={AgileInnova} alt="Icono de Agile Innova" />
+                    </a>
+                    <p>para: </p>
+                    <a href="https://makaia.org/portfolio/academia-geek/">
+                        <img src={IconAG} alt="Academia Geek logo" style={{"width": "50px;"}}/>
                     </a>
                 </div>
             </section>

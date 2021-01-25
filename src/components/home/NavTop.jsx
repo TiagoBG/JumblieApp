@@ -6,7 +6,7 @@ import MenuAccesibility from '../base/MenuAccesibility'
 function NavTop() {
     return (
 
-        <section className="content-section-nav">
+        <section className="content-section-nav container-fluid">
             <div className="content-margin-nav">
                 <div className="d-flex position-relative justify-content-center justify-content-between">
                     <h1 className="txt-principal-home-nav mt-3">Una plataforma accesible para todos,
