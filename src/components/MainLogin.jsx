@@ -58,7 +58,7 @@ class MainLogin extends Component {
                     cookies.set('username', respuesta.username, { path: "/" });
                     cookies.set('email', respuesta.email, { path: "/" });
                     cookies.set('usertype', respuesta.usertype, { path: "/" });
-                    window.location.href = "./login";
+                    window.location.href = "./";
                     Sa2.fire(
                         `!Bienvenido, ${respuesta.name} ${respuesta.lastname}!`,
                         'Inténtelo de nuevo',
@@ -88,7 +88,7 @@ class MainLogin extends Component {
             console.log(`username: ${cookies.get('username')}`);
             console.log(`usertype: ${cookies.get('usertype')}`);
 
-            window.location.href = "./home";
+            window.location.href = "./";
         }
     }
 
@@ -97,7 +97,7 @@ class MainLogin extends Component {
 
         cookies.set('name', response.name, { path: "/" });
         cookies.set('email', response.email, { path: "/" });
-        window.location.href = "./home";
+        window.location.href = "./";
         Sa2.fire(
             `Lo sentimos, el inicio con Google falló`,
             'Inténtelo de nuevo',
@@ -114,7 +114,7 @@ class MainLogin extends Component {
         //cookies.set('familyName', response.familyName, { path: "/" });
         //cookies.set('givenName', response.givenName, { path: "/" });
         cookies.set('email', response.email, { path: "/" });
-        window.location.href = "./home";
+        window.location.href = "./";
         Sa2.fire(
             `Lo sentimos, el inicio con Google falló`,
             'Inténtelo de nuevo',
