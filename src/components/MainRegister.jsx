@@ -10,7 +10,7 @@ import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 
-const baseUrl = 'http://localhost:3000/users'
+const baseUrl = 'https://pruebafiltro.tiagobg.repl.co/users'
 
 class MainFormularioRegistro extends Component {
     constructor(props) {

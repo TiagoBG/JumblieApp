@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Link, withRouter } from "react-router-dom";
+import { NavLink, Link, withRouter } from "react-router-dom";
 import axios from 'axios'
 import md5 from 'md5'
 import Cookies from 'universal-cookie'
@@ -13,9 +13,8 @@ import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 
-import AccessButton from '../components/AccessButton'
 
-const baseUrl = 'http://localhost:3000/users'
+const baseUrl = 'https://pruebafiltro.tiagobg.repl.co/users'
 const cookies = new Cookies();
 
 class MainLogin extends Component {
@@ -59,7 +58,7 @@ class MainLogin extends Component {
                     cookies.set('username', respuesta.username, { path: "/" });
                     cookies.set('email', respuesta.email, { path: "/" });
                     cookies.set('usertype', respuesta.usertype, { path: "/" });
-                    window.location.href = "./test";
+                    window.location.href = "./login";
                     Sa2.fire(
                         `!Bienvenido, ${respuesta.name} ${respuesta.lastname}!`,
                         'Inténtelo de nuevo',
@@ -89,7 +88,7 @@ class MainLogin extends Component {
             console.log(`username: ${cookies.get('username')}`);
             console.log(`usertype: ${cookies.get('usertype')}`);
 
-            window.location.href = "./test";
+            window.location.href = "./home";
         }
     }
 
@@ -98,7 +97,7 @@ class MainLogin extends Component {
 
         cookies.set('name', response.name, { path: "/" });
         cookies.set('email', response.email, { path: "/" });
-        window.location.href = "./test";
+        window.location.href = "./home";
         Sa2.fire(
             `Lo sentimos, el inicio con Google falló`,
             'Inténtelo de nuevo',
@@ -115,7 +114,7 @@ class MainLogin extends Component {
         //cookies.set('familyName', response.familyName, { path: "/" });
         //cookies.set('givenName', response.givenName, { path: "/" });
         cookies.set('email', response.email, { path: "/" });
-        window.location.href = "./test";
+        window.location.href = "./home";
         Sa2.fire(
             `Lo sentimos, el inicio con Google falló`,
             'Inténtelo de nuevo',

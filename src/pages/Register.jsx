@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/base/Header'
+import Footer from '../components/base/Footer'
 import MainRegister from '../components/MainRegister'
 
 class Register extends Component {
@@ -9,7 +9,7 @@ class Register extends Component {
   render() {
     return (
       <>
-        <Header/>
+        
         <MainRegister/>
         <Footer/>        
       </>
